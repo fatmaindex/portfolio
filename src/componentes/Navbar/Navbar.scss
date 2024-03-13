@@ -1,0 +1,146 @@
+
+  .Navbar{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: fixed;
+    background-color: var(--lightBlack);
+    color: var(--wight);
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    z-index: 100;
+    h1{
+        color:var(--pink)
+    }
+    .logoDiv{
+        width: 130px;
+        height: 60px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        list-style: none;
+        transition: .7s ease;
+      
+        li{
+            color: var(--wight);
+            margin-left: 16px;
+            font-size: 16px;
+            
+            cursor: pointer;
+            position: relative;
+            transition: .2s ease;
+            &:hover{
+                color: var(--pink);
+                &::after{
+                    width: 100%;
+                    transition: ease ;
+
+
+                }
+             
+            }
+        
+            // &::after{
+            //     content:"";
+            //     width: 0%;
+            //     height: 2px;
+            //     position: absolute;
+            //     top:19px;
+            //     right: 0rem;
+            //     bottom: 0;
+            //     left: 0px;
+            //     background-color: var(--pink);
+
+            // }
+            
+        }
+    }
+  }
+  .cvBtn{
+    border:2px solid var(--pink) ;
+background: transparent;
+    outline: none;
+    border-radius: 4px;
+    padding: 9px 14px;
+
+    margin-right: 1rem;
+    font-size: 14px;
+
+    height: 100%;
+    transition: .3s ease-in-out;
+    margin-left: 10px;
+    cursor: pointer;
+    a{
+        color: var(--wight);
+        text-decoration: none;
+    }
+    &:hover{
+        // background: transparent;
+    background-color: var(--pink);
+
+        // border:2px solid var(--pink) ;
+        // padding: 9px 14px;
+
+
+    }
+}
+  .closeicon,.barsIcon{
+    display: none;
+  }
+  @media screen and (max-width:768px){
+    .Navbar{
+        padding-left: 1rem;
+    }
+.nav{
+    padding: 5rem 0 2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+width: 100%;
+position: absolute;
+top: -5555px;
+left: 0;
+z-index: 3000;
+
+background-color: var(--lightBlack);
+transition: .3s ease;
+
+li{
+    font-size: 20px;
+
+}
+
+
+    }
+    .closeicon{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        color: var(--wight);
+        z-index: 200;
+        font-size: 45px;
+    }
+    .barsIcon{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 3rem;
+        color: var(--wight);
+        z-index: 200;
+        font-size: 35px;
+    }
+    .active{
+        transition: .3s ease;
+        top:0;
+    }
+   
+  }

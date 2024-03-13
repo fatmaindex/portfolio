@@ -1,0 +1,42 @@
+
+  .Footer{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lightBlack);
+
+    .leftDiv{
+        p{
+            color: var(--wight);
+            font-size: 14px;
+        }
+        
+    }
+    .rightDiv{
+        .icon{
+            color: var(--pink);
+            font-size: 18px;
+            margin-left: 7px;
+            cursor: pointer;
+
+            &:hover{
+              color: var(--wight);
+            }
+        }
+    }
+  }
+  @media screen and (max-width:768px){
+  .Footer{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+  }
+  .leftDiv{
+    text-align: center;
+    
+}
+  
+ 
+  }

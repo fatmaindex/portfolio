@@ -1,0 +1,169 @@
+
+  .Home{
+    // background-color: var(--black);
+    width: 100%;
+    position: relative;
+    padding-top:10.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    .homeContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        width: 50%;
+        .myName{
+            color: var(--wight);
+            span{
+                color: var(--pink);
+            }
+        }
+        h3{
+            color: var(--wight);
+            text-shadow:   0 0 2px #fff,
+                0 0 8px #c73897, 0 0 9px #c73897,
+               0 0 12px #c73897, 0 0 17px #c73897;
+
+}
+        h1{
+            color: var(--pink);
+            font-size: 30px;
+            margin-bottom: 1rem;
+        }
+    }
+    .btnsDiv{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+        height: max-content;
+    }
+    .cvBtn{
+        background-color: var(--pink);
+        border:2px solid var(--pink) ;
+        outline: none;
+        border-radius: 4px;
+        padding: 9px 14px;
+
+        margin-right: 1rem;
+        font-size: 14px;
+    margin-left: 0;
+        height: 100%;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        
+        a{
+            color: var(--wight);
+            text-decoration: none;
+        }
+        &:hover{
+            background: transparent;
+           
+
+
+        }
+    }
+    .starBtn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+        color: var(--wight);
+        background-color: transparent;
+        border: 2px solid var(--pink);
+        height: 100%;
+        outline: none;
+        border-radius: 5px;
+        padding: 11px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover{
+            background: var(--pink);
+          
+
+
+        }
+        
+    }
+    .iconsDiv{
+        display: flex;
+        gap: 1rem;
+    
+        .iconDiv{
+            background-color: var(--lightBlack);
+            border-radius: 50%;
+            padding: 13px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow:
+        
+                0 0 8px #c73897, 0 0 9px #fe0eae,
+               0 0 12px #c73897, 0 0 17px #c73897;
+            }
+        .icon{
+        color: var(--pink);
+        font-size: 20px;
+            
+        }
+        a{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+    }
+}}
+.svgDiv{
+width: 40%;
+height: 40%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.shape{
+    width: 250px;
+    height: 300px;
+    background:linear-gradient(rgb(197, 10, 159),rgb(82, 29, 170));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    z-index: -1;
+    position: fixed;
+    position: relative;
+
+}
+
+.img{
+    position: absolute;
+    top: -200px;
+    left: 0;
+    bottom: 0;
+    z-index: 2000;
+    width: 300px;
+    height: 200px;
+}
+@media screen and (max-width:768px){
+    .Home{
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+    .homeContent{
+        width: 100% !important;
+        text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+ 
+  }
